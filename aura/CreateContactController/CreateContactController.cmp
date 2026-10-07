@@ -1,0 +1,23 @@
+<aura:component controller="CreateContactController" implements="flexipage:availableForAllPageTypes,force:appHostable">
+    <aura:attribute name="firstName" type="String" />
+    <aura:attribute name="lastName" type="String" />
+    <aura:attribute name="email" type="String" />
+    <aura:attribute name="message" type="String" />
+    <aura:attribute name="isError" type="Boolean" default="false"/>
+
+    <div class="slds-box slds-theme_default slds-p-around_medium">
+        <h1 class="slds-text-heading_medium slds-p-bottom_medium">Create Contact</h1>
+
+        <lightning:input label="First Name" value="{!v.firstName}" aura:id="firstName" required="true"/>
+        <lightning:input label="Last Name" value="{!v.lastName}" aura:id="lastName" required="true"/>
+        <lightning:input label="Email" type="email" value="{!v.email}" aura:id="email" required="true"/>
+
+        <lightning:button variant="brand" label="Submit" onclick="{!c.handleSubmit}" class="slds-m-top_medium"/>
+
+        <aura:if isTrue="{!not(empty(v.message))}">
+            <div class="{!v.isError ? 'slds-text-color_error slds-p-top_medium' : 'slds-text-color_success slds-p-top_medium'}">
+                <lightning:formattedText value="{!v.message}" />
+            </div>
+        </aura:if>
+    </div>
+</aura:component>

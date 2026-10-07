@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ManagedTopics xmlns="http://soap.sforce.com/2006/04/metadata">
+    <managedTopic>
+        <fullName>Fashion World Super Market.Navigational:Case Historty</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Case Historty</name>
+        <parentName></parentName>
+        <position>1</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Fashion World Super Market.Navigational:Case Tracker</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Case Tracker</name>
+        <parentName></parentName>
+        <position>0</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Fashion World Super Market.Navigational:Profile</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Profile</name>
+        <parentName></parentName>
+        <position>2</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Fashion World Super Market.Navigational:See Your Profile</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>See Your Profile</name>
+        <parentName></parentName>
+        <position>3</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+</ManagedTopics>

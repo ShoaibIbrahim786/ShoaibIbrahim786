@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title= "Insert Employee Data" icon-name="standard:account">
+        <div class="slds-p-around_x-small">
+            <lightning-input label="Employee Name" value={rec.Name} onchange={handleNameChange}></lightning-input>
+            <lightning-input label="Email" value={rec.Email__c} onchange={handleEmailChange}></lightning-input>
+            <lightning-input label="Phone" value={rec.Phone} onchange={handlePhnChange}></lightning-input><br/>
+            <lightning-button label="Save" onclick={handleClick}></lightning-button>
+   
+        </div>
+    </lightning-card>
+</template>
